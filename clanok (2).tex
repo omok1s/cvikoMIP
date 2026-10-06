@@ -1,6 +1,6 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+\documentclass[10pt,twocolumn,twoside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
@@ -12,6 +12,9 @@
 
 \usepackage{cite}
 %\usepackage{times}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsmath}
 
 \pagestyle{headings}
 
@@ -46,8 +49,8 @@ Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlen
 Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
 Záverečné poznámky prináša časť~\ref{zaver}.
 
-
-
+\includegraphics[width = 12cm]{"diagram.png"}
+\includegraphics[width = 6cm, angle = 60]{"cr7.jpg"}
 \section{Nejaká časť} \label{nejaka}
 
 Z obr.~\ref{f:rozhod} je všetko jasné. 
@@ -65,11 +68,29 @@ Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný pláva
 \section{Iná časť} \label{ina}
 
 Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
-
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \centering
+    \includegraphics[width=0.28\textwidth]{fiit.png}
+\end{wrapfigure}
 Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
 
 
 \subsection{Nejaké vysvetlenie} \label{ina:nejake}
+
+\[
+A =
+\begin{pmatrix}
+1 & 2 & 3 & 4 \\
+5 & 6 & 7 & 8 \\
+9 & 10 & 11 & 12 \\
+13 & 14 & 15 & 16 \\
+17 & 18 & 19 & 20
+\end{pmatrix}
+\]
+
+\[
+S_n = a_1 + a_1q + a_1q^2 + a_1q^3 + a_1q^4 + a_1q^5 + a_1q^6 + a_1q^7 + a_1q^8 + a_1q^9 + a_1q^{10} + \cdots + a_1q^{n-1}
+\]
 
 Niekedy treba uviesť zoznam:
 
